@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from 'react';
+//import desktopLight from './bg-desktop-light.jpg';
+//import desktopDark from './bg-desktop-dark.jpg';
+import './App.css';
+import Buttons from './buttons/buttons.js';
+import Footer from './footer/footer.js';
+import Header from './header/header.js';
+import TodoList from './todoList/todoList.js';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="background-image">
+      <div className="container">
+        <Header />
+        <TodoList />
+        <Buttons />
+        <Footer />
+      </div>
     </div>
   );
 }
